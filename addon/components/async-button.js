@@ -28,7 +28,9 @@ const ButtonComponent = Component.extend(positionalParamsMixin, {
   disabled: computed('textState', 'disableWhen', function() {
     let textState = get(this, 'textState');
     let disableWhen = get(this, 'disableWhen');
-    return disableWhen || textState === 'pending';
+    if (disableWhen || textState === 'pending') {
+      return true;
+    }
   }),
 
   click() {
