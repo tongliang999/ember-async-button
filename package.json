@@ -1,6 +1,6 @@
 {
   "name": "ember-zbj-async-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "When running async actions ensuring disabling of the button, re-enabling, and handling promise rejections is pretty boilerplate. This component packages up that behavior.",
   "directories": {
     "doc": "doc",
